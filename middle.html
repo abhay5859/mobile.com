@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+         body>div:nth-child(2){
+            background-color:#05063b ;
+            height: 600px;
+           
+
+        }
+       
+        #second{
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            border: 1px solid black;
+            gap: 34px;
+            padding: 0px 32px ;
+            margin-top: 40px;
+           
+            
+        }
+        #second>div{
+            border: 0.5px solid white;
+           
+            height: 100%;
+            margin: auto;
+            border-radius: 10px;
+        }
+        #second>div>div{
+            border: 0.5px solid white;
+            width: 30%;
+            height: 30%;
+        }
+        #second>div>div:nth-child(2)>img{
+            width: 100%;
+        }
+        #second>div>div:nth-child(2){
+            margin: auto;
+
+        }
+        .class{
+            border: 1px solid red;
+            width: 10%;
+            height: 10%;
+        }
+        #second>div>div:nth-child(1){
+            width: 15px;
+            height: 15px;
+            margin: 4px 4px;
+            border-radius: 4px;
+        }
+        #second>div>h2{
+           
+            width: 70%;
+            margin: auto;
+            font-weight: bold;
+            color:white;
+            font-size: small;
+          
+            text-align: center;
+            margin-top: 8px;
+        }
+       
+        #first>h1{
+            font-size: 64px;
+            color: white;
+            font-style: normal;
+        }
+        #first>h1>span{
+            display: block;
+            text-align: center;
+        }
+        #first>h3{
+            color: white;
+            text-align: center;
+           
+        }
+       #btn1{
+        border: 0px solid red;
+        width: 10%;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 35%;
+        background-color:#a8a5ff ;
+       }
+       #last{
+        
+       
+        width: 40%;
+        margin: auto;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+       }
+       #last>span:first-child::after{
+        content: "*";
+       }
+       #last>span:nth-child(2){
+        margin-right: 10px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div>
+                <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="">
+            </div>
+            <div>products</div>
+            <div>Use cases</div>
+            <div>Features</div>
+            <div>Resources</div>
+        </div>
+        <div id="second">
+            <div>Pricing</div>
+            <div>Contact Sales</div>
+            <div  onClick="myLog" id="login">Log in</div>
+           
+            <button>Get started-> </button>
+        </div>
+        
+    </div>
+    <div>
+        <div id="first">
+            <h1><span>A plateform built for a</span>
+            <span>new way of working</span></h1>
+            <h3>What would you like to manage with monday.com Work OS?</h3>
+        </div>
+        <div id="second">
+            <div>
+                <div class="small"></div>
+                <div><img src="https://cdn.pixabay.com/photo/2016/12/26/18/33/logo-1932539__340.png" alt=""></div>
+                <h2>Creative & design</h2>
+            </div>
+            <div>
+                <div class="small"></div>
+                <div><img src="https://img.freepik.com/free-vector/illustration-cogwheel_53876-6328.jpg?t=st=1658456946~exp=1658457546~hmac=9f466f8706adafbe3dfde31427c450797d18b459d447b3db95e2cc44832cf653&w=740" alt=""></div>
+                <h2>Software & Development</h2>
+            </div>
+           
+            <div>
+                <div class="small"></div>
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMHUq0JeYDe86GGS65640ZQtMIebhK5rg5Fw&usqp=CAU" alt=""></div>
+                <h2>Marketing</h2>
+            </div>
+            <div>
+                <div class="small"></div>
+               <div> <img src="data:image/png;base64,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" alt=""></div>
+                <h2>Project Management</h2>
+            </div>
+            <div>
+                <div class="small"></div>
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6NqG_lDF2LNUDgKlSrEWg1awuCShwI38aaQ&usqp=CAU" alt=""></div>
+                <h2>Sales & CRM</h2>
+            </div>
+            <div>
+                <div class="small"></div>
+               <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-_RJiURM5ayTfV_vqIMVg2Kx4bGMhgeBoGQ&usqp=CAU" alt=""></div>
+                <h2>Task Management</h2>
+            </div>
+            <div>
+                <div class="small"></div>
+               <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMHUq0JeYDe86GGS65640ZQtMIebhK5rg5Fw&usqp=CAU" alt=""></div>
+                <h2>HR</h2>
+            </div>
+            <div>
+                <div class="small"></div>
+                <div><img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX33741366.jpg" alt=""></div>
+                <h2>Operations</h2>
+            </div>
+            <div>
+                <div class="small"></div>
+               <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnhvEhW7G2ze0WZS1ub1ZoQhXLTPT9qV4iNw&usqp=CAU" alt=""></div>
+                <h2>More Workflows</h2>
+            </div>
+           
+        </div>   
+        <div id="btn1">Get Started-></div>
+        <h3 id="last"><span>no credit card needed</span>
+        <span>unlimitted time on free plan</span></h3>
+
+
+
+
+
+      
+       
+    </div>
+   
+</body>
+</html>
+
+
