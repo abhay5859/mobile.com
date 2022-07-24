@@ -21,13 +21,20 @@
         <div id="second">
             <div>Pricing</div>
             <div>Contact Sales</div>
-            <div onclick="myLog" id="log">Log in</div>
+            <div id="log">Log in</div>
            
-            <button>Get started-> </button>
+            <div id="button">Get started-> </div>
         </div>
         
     </div>
     
 </body>
 </html>
+<script>
+    document.querySelector("#log").addEventListener("click",myLogin);
+    function myLogin(){
+       
+        window.location.href="./login.html"
+    }
+</script>
 
