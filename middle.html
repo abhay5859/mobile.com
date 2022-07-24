@@ -117,7 +117,7 @@
             <div>
                 <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="">
             </div>
-            <div>products</div>
+            <div id="product">products</div>
             <div>Use cases</div>
             <div>Features</div>
             <div>Resources</div>
@@ -125,9 +125,9 @@
         <div id="second">
             <div>Pricing</div>
             <div>Contact Sales</div>
-            <div  onClick="myLog" id="login">Log in</div>
+            <div id="login">Log in</div>
            
-            <button>Get started-> </button>
+            <div id="button">Get started-> </div>
         </div>
         
     </div>
@@ -200,5 +200,17 @@
    
 </body>
 </html>
+<script>
+    document.querySelector("#login").addEventListener("click",myLogIn);
+    function myLogIn(){
+       
+        window.location.href="./login.html"
+    }
+    document.querySelector("#product").addEventListener("click",myPro);
+    function myPro(){
+       
+        window.location.href="./product.html"
+    }
+</script>
 
 

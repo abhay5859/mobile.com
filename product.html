@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        #top{
+            
+            height: 80px;
+            width: 90%;
+            display: flex;
+          justify-content: space-between;
+          
+          margin: auto;
+          margin-top: 10px;
+        }
+        #top>div{
+           
+            height: 70%;
+            margin-top: 10px;
+            margin-left: -10px;
+        }
+        #top>div>h2,p{
+            font-weight: bold;
+            color: #0d0f45;
+        }
+        #main{
+           
+            width: 98%;
+            height: 400px;
+            display: flex;
+            margin: auto;
+           
+        }
+        #main>div{
+          
+            width: 30%;
+            height: 90%;
+            margin: auto;
+            display: grid;
+            align-content: space-between;
+        }
+        #main>div:nth-child(2){
+           
+            width: 30%;
+            height: 60%;
+            margin: auto;
+            margin-top: 10px;
+           
+           
+        }
+        #main>div:nth-child(3){
+           
+            width: 20%;
+            height: 30%;
+            margin: auto;
+            margin-top: 40px;
+           
+           
+        }
+        #main>div>div>img{
+            width: 100%;
+        }
+        #main>div>div>p{
+            margin-left: 40px;
+            margin-top: -28px;
+        }
+        #main>div:nth-child(2)>div>p{
+            margin-left: 70px;
+            margin-top: -38px;
+        }
+        #main>div:nth-child(3)>div>p{
+            margin-left: 60px;
+            margin-top: -8px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div id="home">
+                <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="">
+            </div>
+            <div>products</div>
+            <div>Use cases</div>
+            <div>Features</div>
+            <div>Resources</div>
+        </div>
+        <div id="second">
+            <div>Pricing</div>
+            <div>Contact Sales</div>
+            <div id="log">Log in</div>
+           
+            <div id="button">Get started-> </div>
+        </div>
+        
+    </div>
+    <div id="top">
+        <div>
+            <h2>monday products</h2>
+            <p>Products tailored to your teams' needs</p>
+        </div>
+        <div>
+            <p>-More by monday.com</p>
+        </div>
+    </div>
+    <div id="main">
+        <div>
+            <div>
+                <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/minisites/header%20logos/work_management/desktop_open_monday_wm_logo.png" alt="">
+                <p>For team managing task and workflows</p>
+            </div>
+            <div>
+                <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/minisites/header%20logos/crm/desktop_open_monday_crm_logo.png" alt="">
+                <p>For sales & costumer facing teams</p>
+            </div>
+            <div>
+                <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/minisites/header%20logos/dev/desktop_open_monday_dev_logo.png" alt="">
+                <p>For products &development teams</p>
+            </div>
+           
+           
+                
+        </div>
+        <div>
+            <div>
+                <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/minisites/header%20logos/marketer/desktop_open_monday_marketer_logo.png" alt="">
+                <p>For marketing & creative teams</p>
+            </div>
+            <div>
+                <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/minisites/header%20logos/projects/desktop_open_monday_projects_logo.png" alt="">
+                <p>For PMO team & project managers</p>
+            </div>
+           
+           
+                
+        </div>
+        <div>
+            <div>
+                <img src="https://uploads-ssl.webflow.com/61ffe6be3bd15a4f5d7b3986/6214d4aa324d2c85ebff7cf6_workforms-logo.svg" alt="">
+               
+            </div>
+            <div>
+                <img src="https://cdn.monday.com/images/products/canvas-logo-3.png" alt="">
+                
+            </div>
+           
+           
+                
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+<script>
+   
+    document.querySelector("#log").addEventListener("click",myLogin);
+    function myLogin(){
+       
+        window.location.href="./login.html"
+    }
+    document.querySelector("#home").addEventListener("click",myHome);
+    function myHome(){
+       
+        window.location.href="./middle.html"
+    }
+
+</script>
